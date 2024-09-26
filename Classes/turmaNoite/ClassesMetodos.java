@@ -27,7 +27,15 @@ public class ClassesMetodos {
 	}
 	
 	//05 Encontra o maior numero em um array de inteiros
-	
+	public int maiorNumero(int[]numeros) {
+		int maior = numeros[0];
+		for (int numero : numeros) {
+			if (numero > maior) {
+				maior = numero;
+			}
+		}
+		return maior;
+	}
 	
 	
 	
@@ -45,7 +53,9 @@ public class ClassesMetodos {
 		System.out.println("Nome ao contrario: " + util.invertString("java"));
 		
 		System.out.println("O fatorial do numero 5 é " + util.fatorial(5));
-
+        
+		int[] numeros = {1, 5 , 6 ,8,44};
+		System.out.println("O maior numero do Array é: " + util.maiorNumero(numeros));
 	}
 
 }
