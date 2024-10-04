@@ -10,6 +10,7 @@ public class Carro extends Veiculo {
 	}
 	@Override
 	public void exibirDetalhes() {
+
 		super.exibirDetalhes();
 		System.out.println("Numeros de portas: " + numeroDePortas);
 	}
